@@ -1,0 +1,91 @@
+.card{
+    width: 400px;
+    height: 400px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto ;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.list-header{
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+.list-header img{
+    padding-top: 18px;
+    height: 50%;
+}
+.list-header p{
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(8, 32, 148);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.add-task{
+    height: 33px;
+    padding: 10px;
+}
+
+.add-task input{
+    width: 270px;
+    height: 33px;
+    border: none;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    text-align: center;
+    background-color: rgb(222, 220, 220);
+}
+
+.add-task button{
+    margin-left: -25px;
+    height: 38px;
+    width: 90px;
+    border: none;
+    background-color: rgb(245, 101, 49);
+    border-radius: 35px;
+}
+
+.add-task img{
+    height: 100%;
+    margin-right: -30px;
+}
+.task-type{
+    display: flex;
+    height: 50px;
+    padding-left: 30px;
+}
+.task-type img{
+    padding-top: 15px;
+    height: 40%;
+}
+.task-type p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.task-info{
+    height: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.task-info button{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(32, 117, 32);
+    border: none;
+    color: white;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.task-info p{
+    font-size: 14px;
+    font-weight: 400;
+    width: 100px;
+}

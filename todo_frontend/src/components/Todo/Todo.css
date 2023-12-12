@@ -1,0 +1,26 @@
+.todo{
+    height: 35px;
+    width: calc(100% - 10px);
+    padding-left: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.todo input{
+    margin-left: 25px;
+}
+
+.todo p{
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 380;
+    width: 250px;
+    text-align: left;
+}
+.todo img{
+    margin-top: 5px;
+    height: 60%;
+    cursor: pointer;
+}

@@ -45,8 +45,12 @@ public class TodoServiceImpl implements TodoService{
 
     @Override
     public ResponseEntity<String> deleteCompletedTodos() {
-        todoRepository.deleteCompletedTasks();
-        return new ResponseEntity<>("Completed Tasks Deleted",HttpStatus.OK);
+        try {
+            todoRepository.deleteByStatus("completed");
+            return new ResponseEntity<>("Completed Tasks Deleted", HttpStatus.OK);
+        }catch(Exception e){
+            return new ResponseEntity<>("Something went wrong",HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @Override
